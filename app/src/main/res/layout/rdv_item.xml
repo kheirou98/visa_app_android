@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/voyage">
+
+    <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+                android:id="@+id/rdv_nomprenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:text="Nom Prenom "
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|normal" />
+
+        <TextView
+                android:id="@+id/rdv_depart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rdv_nomprenom"
+                android:layout_alignStart="@+id/rdv_nomprenom"
+                android:layout_alignLeft="@id/rdv_nomprenom"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"
+                android:textSize="18dp"
+                android:layout_marginRight="4dp"
+                android:text=" Départ"
+                android:textStyle="bold|normal"
+                android:textColor="#FFFFFF" />
+
+        <TextView
+                android:id="@+id/rdv_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:textSize="18dp"
+                android:layout_below="@id/rdv_nomprenom"
+                android:text="Destination"
+                android:textStyle="bold|normal"
+                android:textColor="#FFFFFF"
+                android:layout_toEndOf="@+id/rdv_depart"
+                android:layout_marginStart="130dp"/>
+        <TextView
+                android:id="@+id/rdv_agence"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rdv_depart"
+                android:gravity="center"
+                android:layout_alignStart="@+id/rdv_depart"
+                android:layout_alignLeft="@id/rdv_depart"
+                android:layout_marginTop="4dp"
+                android:textSize="18dp"
+                android:layout_marginRight="4dp"
+                android:text="Agence"
+                android:textStyle="bold|normal"
+                android:textColor="#FFFFFF" />
+        <TextView
+                android:id="@+id/rdv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rdv_agence"
+                android:layout_alignStart="@+id/rdv_agence"
+                android:layout_alignLeft="@id/rdv_agence"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                android:layout_marginRight="4dp"
+                android:text="Date"
+                android:textStyle="bold|normal"
+                android:textColor="#FFFFFF" />
+
+        <TextView
+                android:id="@+id/rdv_heure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="18dp"
+                android:layout_below="@id/rdv_agence"
+                android:text="Heure"
+                android:textStyle="bold|normal"
+                android:textColor="#FFFFFF"
+                android:layout_toEndOf="@+id/rdv_date"
+                android:layout_marginStart="100dp"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
